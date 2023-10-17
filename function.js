@@ -12,3 +12,19 @@ function add(a,b){ // Perameters
 }
 
 console.log(add(4,5)) // Arguments
+
+
+
+// Arrow Function
+var n = (arr1, arr2) => arr1.concat(arr2);
+console.log(n([1,2,3], [4,5,6]));
+
+
+// Here (...args) called rest operator
+function add(...args){
+        return args.reduce((a,b) => a+b,0)
+    }
+console.log(add(1,2,3,4,5,6))
+
+
+
